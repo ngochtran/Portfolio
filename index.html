@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ngoc's personal website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="functions.js"></script>
+
+</head>
+<body onLoad = "animate()">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="room">
+                <img id="base" src="Images/base1.png" class="img-base">
+                <img id="hover" src="Images/hover-empty.png" class="img-hover">
+                <a class="reset-button-link" href="#">
+                    <button class="reset-button" onmouseover="showImage('Images/hover-empty.png')"><b>outside box</b></button>
+                </a>
+                <a class="shelf-button-link" href="#">
+                    <button class="shelf-button" onmouseover="showImage('Images/shelf-hover.png')"><b>shelf</b></button>
+                </a>
+                <a class="painting-button-link" href="art.html">
+                    <button class="painting-button" onmouseover="showImage('Images/painting-hover.png')"><b>pl</b></button>
+                </a>
+                <a class="files-button-link" href="projects.html">
+                    <button class="files-button" onmouseover="showImage('Images/files-hover.png')"><b>files</b></button>
+                </a>
+                <a class="tv-button-link" href="gamedev.html">
+                    <button class="tv-button" onmouseover="showImage('Images/tv-hover.png')"><b>tv h</b></button>
+                </a>
+                <a class="board-button-link" href="about.html">
+                    <button class="board-button" onmouseover="showImage('Images/board-hover.png')"><b>bol</b></button>
+                </a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="row">
+                <div class="home-text">
+                    <div class="col">
+                        <div class="name">
+                            <h1>
+                                Ngoc Tran
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <ul class="nav flex-column">
+                                <li class="nav-item"><a class="nav-link active" href="about.html">about me</a></li>
+                                <li class="nav-item"><a class="nav-link active" href="projects.html">projects</a></li>
+                                <li class="nav-item"><a class="nav-link active" href="gamedev.html">game devlog</a></li>
+                                <li class="nav-item"><a class="nav-link active" href="art.html">art portfolio</a></li>
+                                <li class="nav-item"><a class="nav-link active" href="#">resume</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
