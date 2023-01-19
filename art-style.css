@@ -1,0 +1,43 @@
+/* ------------------------- ART PAGE CONTENT ------------------------------*/
+.container-1{
+    padding: 0;
+    margin:0;
+}
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4a484b;
+    height: 50vh;
+}
+.slider .art-base{
+    width:100%;
+    height:100%;
+    object-fit: contain;
+}
+.art-btn{
+    border: none;
+    color: white;
+    font-size: 60px;
+    border-radius: 5px;
+    width: 70px;
+}
+#left-btn{
+   position: absolute;
+   left: 10%;
+   background: linear-gradient(to right, transparent , grey);
+}
+#left-btn:hover{
+    background: grey;
+    transition: .3s ease-in-out;
+}
+
+#right-btn{
+    position: absolute;
+    right: 10%;
+    background: linear-gradient(to right, grey , transparent);
+}
+#right-btn:hover{
+    background: grey;
+    transition: .3s ease-in-out;
+}

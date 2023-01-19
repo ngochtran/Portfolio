@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ngoc's personal website - about me</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="nav-style.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h3><a href="index.html">Ngoc Tran</a></h3>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">home</a>
+            </li>
+            <li><a href="about.html">about me</a>
+            </li>
+            <li><a href="projects.html">projects</a>
+            </li>
+            <li><a href="gamedev.html">game devlog</a>
+            </li>
+            <li><a href="art.html">art portfolio</a>
+            </li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <script src="nav.js"></script>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col">
+                <div class="self-photo">
+                    <img id="self" src="Images/photo.jpg">
+                </div>
+            </div>
+
+            <div class="col-lg-8">
+                <div class="second-ctn">
+                    <div class="tab-box">
+                        <button class="tab-btn active">bio</button>
+                        <button class="tab-btn">cs courses</button>
+                        <button class="tab-btn">other courses</button>
+                        <button class="tab-btn">awards</button>
+                        <button class="tab-btn">contact me</button>
+                    </div>
+                    <div class="content-box">
+                        <div class="content active">
+                            <h2>Ngoc Tran | Stanford ' 26 | (she/her)</h2>
+                            <p>
+                                I am a Vietnamese-American student majoring in CS on the Visual Computation track at
+                                Stanford University. I am interested in storytelling, game design/dev, and
+                                art!<br><br>At
+                                Stanford, I am involved in the Vietnamese American Association (SVSA) as a finance and
+                                PR intern, Asian American Student Association (AASA), Women in Design (SWID), and the
+                                Biological Interdisciplinary Open Maker Environment organization (BIOME).
+                            </p>
+                        </div>
+                        <div class="content">
+                            <h2>Computer Science Courses</h2>
+                            <p>
+                                <div class="row">
+                                    <div class = col> 
+                                        <b>Core:</b><br>
+                                        <i>CS106A - Programming Methodology</i><br>
+                                        <i>CS106B - Programming Abstractions</i>
+                                        <br><br> 
+                                        <b>Visual Compuation:</b><br>
+                                        <i>N/A</i>
+                                        <br><br> 
+                                    </div>
+                                    <div class = col>
+                                        <b>Theory:</b><br>
+                                        <i>N/A</i>
+                                        <br><br><br>
+                                        <b>Electives:</b><br>
+                                        <i>N/A</i>
+                                        <br><br>
+                                    </div>
+                                </div>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <h2>Other Courses</h2>
+                            <p>
+                                <div class="row">
+                                    <div class = col> 
+                                        <b>Math:</b><br>
+                                        <i>N/A</i>
+                                        <br><br> 
+                                        <b>Science:</b><br>
+                                        <i>CHEM31M - Chemical Principles</i><br>
+                                        <i>PHYSICS41 - Mechanics</i><br>
+                                        <br><br>
+                                    </div>
+                                    <div class = col>
+                                        <b>English & Writing:</b><br>
+                                        <i>COLLEGE102 - Citizenship in the 21st Century</i><br>
+                                        <i>ENGLISH190H - The Graphic Novel</i>
+                                        <br><br>
+                                        <b>Misc:</b><br>
+                                        <i>RELIGST 107 - Buddhism in the Bay Area</i><br>
+                                        <i>UAR42 - LSP First Year Seminar</i><br>
+                                        <i>ARTSTUDI40SI - Intro to Art in Entertainment</i>
+                                    </div>
+                                </div>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <h2>Awards and Distinctions</h2>
+                            <p>
+                                Stanford: Leland Scholar<br>
+                                The Gates Scholarship: Gates Scholar<br>
+                                Questbridge: National College Match Finalist<br>
+                                Pflugerville High School: Valedictorian<br>
+                                Austin Regional Science Festival: 2nd in Microbiology (2019), 
+                                2nd in Plant Sciences (2020), Superintendent Award (2017-2020), 
+                                TAWWA/WEAT Excellence in Water (2021)<br>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <h2>Contact Me</h2>
+                            <p>
+                                email: nhtran@stanford.edu
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const tabs = document.querySelectorAll('.tab-btn');
+        const all_content = document.querySelectorAll('.content');
+
+        tabs.forEach((tab, index) => {
+            tab.addEventListener('click', (e) => {
+                tabs.forEach(tab => { tab.classList.remove('active') });
+                tab.classList.add('active');
+                all_content.forEach(content => { content.classList.remove('active') });
+                all_content[index].classList.add('active');
+            })
+        })
+    </script>
+</body>
+
+</html>
