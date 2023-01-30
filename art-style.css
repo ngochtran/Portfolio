@@ -26,14 +26,26 @@
    position: absolute;
    left: 10%;
    background: transparent;
+   opacity: 40%;
 }
 #right-btn{
     position: absolute;
     right: 10%;
     background: transparent;
+    opacity: 40%;
 }
 /* ------------------------- IMAGE GALLERY ------------------------------*/
-
+select{
+    width: 40%;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+}
+option{
+    font-family: Verdana, sans-serif;
+    border: none;
+}
 #row-1{
     margin-top: 30px;
 }
@@ -53,9 +65,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Verdana, sans-serif;
-}
-option{
     font-family: Verdana, sans-serif;
 }
 .artwork{
@@ -88,5 +97,25 @@ option{
     }
     .artwork{
         border: 3px solid white;
+    }
+    .art-btn{
+        font-size: 40px;
+    }
+    #left-btn{
+       left: 1%;
+    }
+    #right-btn{
+        right: 1%;
+    }  
+}
+@media screen and (max-width: 550px){
+    select{
+        width: 70%;
+    }
+    .col{
+        padding:0;
+    }
+    .artwork{
+        margin-bottom: 0;
     }
 }
