@@ -25,20 +25,68 @@
 #left-btn{
    position: absolute;
    left: 10%;
-   background: linear-gradient(to right, transparent , grey);
+   background: transparent;
 }
-#left-btn:hover{
-    background: grey;
-    transition: .3s ease-in-out;
-}
-
 #right-btn{
     position: absolute;
     right: 10%;
-    background: linear-gradient(to right, grey , transparent);
+    background: transparent;
 }
-#right-btn:hover{
-    background: grey;
-    transition: .3s ease-in-out;
+/* ------------------------- IMAGE GALLERY ------------------------------*/
+
+#row-1{
+    margin-top: 30px;
+}
+.header{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 75px;
+    text-shadow: -2px 0px 0px #b5a7b8,
+    1px 0px 0px #b5a7b8,
+    0px -2px 0px #b5a7b8,
+    0px 2px 0px #b5a7b8;
+    color: white;
+}
+.select{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, sans-serif;
+}
+option{
+    font-family: Verdana, sans-serif;
+}
+.artwork{
+    width: 100%;
+    margin-bottom: 3%;
+    border: 4px solid white;
+}
+#sw{
+    display: block;
+}
+#il{
+    display: none;
+}
+#ca{
+    display: none;
+}
+#d3{
+    display: none;
+}
+#sk{
+    display: none;
 }
 
+@media screen and (max-width: 768px){
+    .header{
+        font-size: 50px;
+    }
+    .select{
+        font-size: 75%;
+    }
+    .artwork{
+        border: 3px solid white;
+    }
+}

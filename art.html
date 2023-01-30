@@ -44,15 +44,77 @@
             <button id="right-btn" class="art-btn" onclick="next()">></button>
         </div>
     </div>
+    <div class="header">Art Gallery</div>
     <div class="select">
-        <select name="format" id="format">
+        <select name="format" id="format" onchange="showMe(this.value);">
             <option value="selected-works">selected works</option>
             <option value="illust">illustrations</option>
             <option value="concept-art">concept art & character designs</option>
             <option value="3D">3D art</option>
             <option value="sketches">sketches</option>
         </select>
-        
+    </div>
+    <div class="container">
+        <div class=gallery-box> 
+            <div id="sw"> 
+                <div id = "row-1" class="row">
+                    <div class="col">
+                        <img src="Images/sw1.png" class="artwork">
+                        <img src="Images/sw2.png" class="artwork">
+                    </div>
+                    <div class="col">
+                        <img src="Images/sw3.png" class="artwork">
+                    </div>
+                </div>
+            </div>
+            <div id="il"> 
+                <div id = "row-1" class="row">
+                    <div class="col">
+                        <img src="Images/illust1.png" class="artwork">
+                        <img src="Images/illust2.png" class="artwork">
+                        <img src="Images/illust5.png" class="artwork">
+                    </div>
+                    <div class="col">
+                        <img src="Images/illust3.png" class="artwork">
+                        <img src="Images/illust4.png" class="artwork">
+                        <img src="Images/illust6.png" class="artwork">
+                    </div>
+                </div>
+            </div>
+            <div id="ca"> 
+                <div id = "row-1" class="row">
+                    <div class="col">
+                        <img src="Images/illust1.png" class="artwork">
+                        <img src="Images/illust2.png" class="artwork">
+                    </div>
+                    <div class="col">
+                        <img src="Images/illust3.png" class="artwork">
+                    </div>
+                </div>
+            </div>
+            <div id="d3"> 
+                <div id = "row-1" class="row">
+                    <div class="col">
+                        <img src="Images/illust1.png" class="artwork">
+                        <img src="Images/illust2.png" class="artwork">
+                    </div>
+                    <div class="col">
+                        <img src="Images/illust3.png" class="artwork">
+                    </div>
+                </div>
+            </div>
+            <div id="sk"> 
+                <div id = "row-1" class="row">
+                    <div class="col">
+                        <img src="Images/illust1.png" class="artwork">
+                        <img src="Images/illust2.png" class="artwork">
+                    </div>
+                    <div class="col">
+                        <img src="Images/illust3.png" class="artwork">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
