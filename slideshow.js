@@ -1,6 +1,7 @@
 var currentArt = 0;
 var myArt = new Array();
 var delay = 4000;
+var counter = 0;
 
 for (var i = 0; i < 3; i++){
     myArt[i] = new Image();
@@ -14,21 +15,27 @@ function setImg(){
 function prev(){
     if (i<=0) i = myArt.length;
     i--;
-    console.log('hi');
+    counter++;
     return setImg();
 }
 
 function next(){
-    if(i >= myArt.length - 1) i = -1;
+    if (i >= myArt.length - 1) i = -1;
     i++;
+    counter++;
     return setImg();
 }
 
 function animate() {
-    if(i >= myArt.length - 1) i = -1;
-    i++;
+    if (counter == 0){
+        if(i >= myArt.length - 1) i = -1;
+        i++;
+        setTimeout("animate()", delay);
+        return setImg();
+    }else{
+        counter = 0;
+    }
     setTimeout("animate()", delay);
-    return setImg();
 }
 
 function choseSW(totalArt){
