@@ -6,7 +6,7 @@
 }
 
 body{
-    background: #d6cdc1;
+    background: #323233;
     color: #fff;
     overflow-x: hidden;
     position: relative;
@@ -30,7 +30,7 @@ i{
     align-items: center;
 }
 .row .duck h1{
-    color: #422625;
+    color: #fff;
 }
 /* ------------------------- ABOUT ME PAGE CONTENT ------------------------------*/
 .row{
@@ -48,13 +48,14 @@ i{
 #self{
     width: 100%;
     z-index: 0;
+    border: 5px solid white;
+    border-radius: 20px;
 }
 .second-ctn{
-    background-color: white;
+    background-color: #BCCCDC;
     padding: 30px;
-    box-shadow: 10px 20px 0px rgb(0,0,0,.1);
+    box-shadow: 10px 20px 0px #486581;
     border-radius: 20px;
-    align-self: center;
 }
 .tab-box{
     width: 100%;
@@ -65,7 +66,7 @@ i{
 }
 .tab-box .tab-btn{
     font-size: 18px;
-    color: grey;
+    color: #323233;
     background: none;
     border: none;
     padding: 18px;
@@ -73,7 +74,7 @@ i{
 }
 .tab-box .tab-btn.active{
     color: white;
-    background-color: #b5a7b8;
+    background-color: #486581;
     border-radius: 5px;
 }
 .content-box{
@@ -94,7 +95,7 @@ i{
     margin-bottom: 10px;
 }
 .content{
-    color: grey;;
+    color: #323233;;
 }
 
 /* ------------------------- NAV BAR ------------------------------*/
@@ -103,7 +104,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: #b5a7b8;
+    background-color: #486581;
 }
 .logo{
     color: white;
@@ -136,7 +137,7 @@ nav{
     font-size: 18px;
 }
 .nav-links li a:hover {
-    color: #e5d1e8;
+    color: #BCCCDC;
 }
 .burger{
     display: none;
@@ -204,7 +205,7 @@ nav{
         display: block;
     }
     .nav-active{
-        background-color: #9c8fa7;
+        background-color: #486581;
     }
 }
 @media screen and (max-width: 300px){
