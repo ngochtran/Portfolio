@@ -5,8 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    background: #323233;
-    color: #fff;
+    background: #f0eae3;
 }
 
 /* ------------------------- ROOM ------------------------------*/
@@ -171,7 +170,7 @@ body{
     margin-top: 25%;
 }
 .name{
-    color: #fff;
+    color: #000000;
     margin-top: 25%;
 }
 .name h1{
@@ -183,11 +182,11 @@ body{
     padding: 0px;
 }
 .nav .nav-item .nav-link{
-    color:#fff;
+    color:#000000;
     font-size: 24px;
 }
 .nav .nav-item .nav-link:hover{
-    color: #BCCCDC;
+    color: grey;
     font-size: 26px;
 }
 
